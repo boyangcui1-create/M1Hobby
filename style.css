@@ -28,13 +28,18 @@ html {
 }
 
 body {
-  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR",
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Microsoft YaHei",
+    "PingFang SC", "Noto Sans KR", "Noto Sans SC", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
   background-color: var(--bg-page);
   color: var(--text-main);
   line-height: 1.65;
   overflow-wrap: break-word;
   word-break: keep-all;
+}
+
+[lang="zh-CN"] {
+  word-break: normal;
 }
 
 .page-wrapper {
@@ -164,6 +169,11 @@ body {
 .card-text {
   font-size: 0.95rem;
   color: var(--text-sub);
+}
+
+.card-text-zh,
+.step-text-zh {
+  margin-top: 6px;
 }
 
 /* ③ "이 취미를 시작하려면" 3단계 안내 */
